@@ -24,16 +24,6 @@ export const productSlice = createSlice({
             }
         },   
 
-        // addToCart: (state, action) => {
-        //     const item = action.payload;
-        //     const existingItem = state.cartItems.find(i => i.id === item.id);
-        //     if (existingItem) {
-        //       existingItem.quantity += 1;
-        //     } else {
-        //       state.cartItems.push({ ...item, quantity: 1 });
-        //     }
-        //   },
-
         getCartTotal: (state) => {
             let {totalQuantity,totalPrice} = state.product.reduce(
                 (cartTotal, cartItem) => {
