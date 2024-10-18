@@ -1,10 +1,8 @@
-// src/components/Card.js
-
 import React, { useEffect } from 'react';
 import { useSelector, useDispatch } from 'react-redux';
 import { addToCart } from '../Store/Slices/productSlice';
 import { fetchProducts } from '../Store/Slices/cardSlice';
-import { Link } from 'react-router-dom';  // Import Link for navigation
+import { Link } from 'react-router-dom';
 
 const Card = () => {
   const dispatch = useDispatch();

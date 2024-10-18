@@ -1,0 +1,30 @@
+[debug] [2024-10-18T12:16:10.965Z] ----------------------------------------------------------------------
+[debug] [2024-10-18T12:16:10.970Z] Command:       D:\Program Files\node.exe C:\Users\Hasan\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js deploy
+[debug] [2024-10-18T12:16:10.971Z] CLI Version:   13.22.1
+[debug] [2024-10-18T12:16:10.971Z] Platform:      win32
+[debug] [2024-10-18T12:16:10.971Z] Node Version:  v20.12.2
+[debug] [2024-10-18T12:16:10.971Z] Time:          Fri Oct 18 2024 17:16:10 GMT+0500 (Pakistan Standard Time)
+[debug] [2024-10-18T12:16:10.972Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2024-10-18T12:16:10.977Z] >>> [apiv2][query] GET https://firebase-public.firebaseio.com/cli.json [none]
+[debug] [2024-10-18T12:16:11.152Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2024-10-18T12:16:11.153Z] > authorizing via signed-in user (syedhamza3877@gmail.com)
+[debug] [2024-10-18T12:16:11.153Z] [iam] checking project my-store-e486f for permissions ["firebase.projects.get","firebasehosting.sites.update"]
+[debug] [2024-10-18T12:16:11.154Z] Checked if tokens are valid: false, expires at: 1729147962011
+[debug] [2024-10-18T12:16:11.155Z] Checked if tokens are valid: false, expires at: 1729147962011
+[debug] [2024-10-18T12:16:11.155Z] > refreshing access token with scopes: []
+[debug] [2024-10-18T12:16:11.157Z] >>> [apiv2][query] POST https://www.googleapis.com/oauth2/v3/token [none]
+[debug] [2024-10-18T12:16:11.157Z] >>> [apiv2][body] POST https://www.googleapis.com/oauth2/v3/token [omitted]
+[debug] [2024-10-18T12:16:11.562Z] <<< [apiv2][status] POST https://www.googleapis.com/oauth2/v3/token 200
+[debug] [2024-10-18T12:16:11.562Z] <<< [apiv2][body] POST https://www.googleapis.com/oauth2/v3/token [omitted]
+[debug] [2024-10-18T12:16:37.512Z] >>> [apiv2][query] POST https://cloudresourcemanager.googleapis.com/v1/projects/my-store-e486f:testIamPermissions [none]
+[debug] [2024-10-18T12:16:37.513Z] >>> [apiv2][(partial)header] POST https://cloudresourcemanager.googleapis.com/v1/projects/my-store-e486f:testIamPermissions x-goog-quota-user=projects/my-store-e486f
+[debug] [2024-10-18T12:16:37.513Z] >>> [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/my-store-e486f:testIamPermissions {"permissions":["firebase.projects.get","firebasehosting.sites.update"]}
+[debug] [2024-10-18T12:16:37.541Z] <<< [apiv2][status] GET https://firebase-public.firebaseio.com/cli.json 200
+[debug] [2024-10-18T12:16:37.542Z] <<< [apiv2][body] GET https://firebase-public.firebaseio.com/cli.json {"cloudBuildErrorAfter":1594252800000,"cloudBuildWarnAfter":1590019200000,"defaultNode10After":1594252800000,"minVersion":"3.0.5","node8DeploysDisabledAfter":1613390400000,"node8RuntimeDisabledAfter":1615809600000,"node8WarnAfter":1600128000000}
+[debug] [2024-10-18T12:16:39.801Z] <<< [apiv2][status] POST https://cloudresourcemanager.googleapis.com/v1/projects/my-store-e486f:testIamPermissions 200
+[debug] [2024-10-18T12:16:39.802Z] <<< [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/my-store-e486f:testIamPermissions {"permissions":["firebase.projects.get","firebasehosting.sites.update"]}
+[debug] [2024-10-18T12:16:39.803Z] Checked if tokens are valid: true, expires at: 1729257370562
+[debug] [2024-10-18T12:16:39.803Z] Checked if tokens are valid: true, expires at: 1729257370562
+[debug] [2024-10-18T12:16:39.804Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/my-store-e486f [none]
+[debug] [2024-10-18T12:16:40.330Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/my-store-e486f 200

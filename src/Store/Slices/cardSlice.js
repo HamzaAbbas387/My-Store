@@ -1,7 +1,6 @@
 import { createSlice, createAsyncThunk } from '@reduxjs/toolkit';
 import axios from 'axios';
 
-// Fetch products with Redux Thunk
 export const fetchProducts = createAsyncThunk(
   'products/fetchProducts',
   async () => {
