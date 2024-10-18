@@ -3,7 +3,8 @@ import { BrowserRouter, Routes , Route } from "react-router-dom";
 import Card from "./Components/Card";
 import Navbar from "./Components/Navbar";
 import Cart from "./Components/cartPage";
-import React, {useEffect} from 'react';
+import React from 'react';
+import ProductDetails from './Components/productDetails';
 
 function App() {
   
@@ -15,6 +16,7 @@ function App() {
       <Routes>
         <Route exact path="/" element={<Card/>} />
         <Route path="/cart" element={<Cart/>} />
+        <Route path="/product/:id" element={<ProductDetails />} />
       </Routes>
     </div>
   </BrowserRouter>
