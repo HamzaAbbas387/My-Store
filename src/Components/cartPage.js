@@ -12,7 +12,7 @@ const CartPage = () => {
   }, [dispatch, product]);
 
   return (
-    <div>
+    <div className="cart-page"  >
       <section className="h-100 gradient-custom">
         <div className="container py-5">
           <div className="row d-flex justify-content-center my-4">
@@ -23,7 +23,7 @@ const CartPage = () => {
                 </div>
                 <div className="card-body">
                   {product.map((data) => (
-                    <div className="row" key={data.id}> {/* Unique key added */}
+                    <div className="row" key={data.id}>
                       <div className="col-lg-3 col-md-12 mb-4 mb-lg-0">
                         <div
                           className="bg-image hover-overlay hover-zoom ripple rounded"
@@ -55,7 +55,7 @@ const CartPage = () => {
                           <button
                             className="btn btn-primary px-3 me-2"
                             onClick={() => dispatch(decreaseItemQuantity(data.id))}
-                            disabled={data.quantity === 1} // Disable when quantity is 1
+                            disabled={data.quantity === 1}
                           >
                             <i className="fas fa-minus"></i>
                           </button>
@@ -67,8 +67,8 @@ const CartPage = () => {
                               value={data.quantity}
                               type="number"
                               className="form-control"
-                              onChange={() => null} // Optional: Handle this input if needed
-                              readOnly // Prevent manual input, or remove this line to allow manual quantity changes
+                              onChange={() => null} 
+                              readOnly
                             />
                             <label className="form-label" htmlFor="form1">Quantity</label>
                           </div>
@@ -82,7 +82,7 @@ const CartPage = () => {
                         </div>
 
                         <p className="text-start text-md-center">
-                          <strong>${data.price.toFixed(2)}</strong> {/* Display price properly */}
+                          <strong>${data.price.toFixed(2)}</strong>
                         </p>
                       </div>
                       <hr className="my-4" />
